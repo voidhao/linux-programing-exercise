@@ -22,6 +22,7 @@ int main()
     FILE *fp;
 
     fp = fopen("records.dat", "w+");
+
     for (i=0; i<NRECORDS; i++) 
     {
         record.integer = '1';
