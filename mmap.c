@@ -63,6 +63,8 @@ int main()
     munmap((void *)mapped, NRECORDS*sizeof(record));
     close(f);
     
-    
+    fp = fopen("record.dat", "r+");    
+    if (!fp)
+        printf("error\n");
     return 0;
 }
